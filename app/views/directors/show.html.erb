@@ -1,0 +1,30 @@
+	<div class="panel panel-default">
+	  <div class="panel-body">
+	    <div class="row">
+	      <div class="col-md-4">
+	        <%= image_tag @director.image.url(:medium) %>
+	        <div class="table-responsive">
+	          <table class="table">
+	            <tbody>
+	              <tr>
+	                <td><strong>Name:</strong></td>
+	                <td><%= @director.name %></td>
+	              </tr>
+	              <tr>
+	                <td><strong>Born:</strong></td>
+	                <td><%= @director.born %></td>
+	              </tr>
+	              <tr>
+	                <td><strong>Description:</strong></td>
+	                <td><%= @director.description %></td>
+	              </tr>
+	            </tbody>
+	          </table>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<%= link_to 'Edit', edit_director_path(@director) %> |
+<%= link_to 'Back', directors_path %>

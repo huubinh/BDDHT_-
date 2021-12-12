@@ -5,5 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :movies
   has_many :actors
+  has_many :directors
   has_many :comments, dependent: :destroy
 end

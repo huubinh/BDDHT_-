@@ -1,0 +1,9 @@
+    <div class="row">
+	  <% @directors.each do |director| %>
+	    <div class="col-sm-6 col-md-3">
+	      <div class="thumbnail">
+	        <%= link_to (image_tag director.image.url(:medium), class: 'image'), director %>
+	      </div>
+	    </div>
+	  <% end %>
+	</div>
