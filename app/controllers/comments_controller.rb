@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @movie }
+        format.html { redirect_to @movie, notice: "Comment was successfully added"}
         format.json { render :show, status: :created, location: @comment }
       else
         format.html { render :new, status: :unprocessable_entity }
