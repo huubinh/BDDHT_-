@@ -13,6 +13,7 @@
 	          <li><%= link_to "New movie", new_movie_path, class: "active" %></li>
 	          <li><%= link_to "New actor", new_actor_path, class: "active" %></li>
 	          <li><%= link_to "New director", new_director_path, class: "active" %></li>
+	          <li><%= link_to "My profile", users_show_path  %></li>
 	          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
 	        <% else %>
 	          <li><%= link_to "Sign up", new_user_registration_path, class: "active" %></li>
