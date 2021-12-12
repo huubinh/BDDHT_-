@@ -12,8 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :comment %>
-    <%= form.text_area :comment %>
+     <div class="comment-title">    
+        <%= form.label :comment %>
+     </div>
+     <div class="comment">
+        <%= form.text_area :comment %>
+     </div>
   </div>
 
   <div class="actions">
