@@ -7,6 +7,8 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :age, presence: true
   
+  has_one_attached :avatar
+  
   has_many :movies
   has_many :actors
   has_many :directors

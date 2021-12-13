@@ -41,6 +41,7 @@
 	        <% else %>
 	          <% @comments.each do |comment| %>
 	            <div class="reviews">
+	              <h3><%= comment.user.name %></h3>
 	              <p><%= comment.comment %></p>
 	            </div>
 	          <% end %>
