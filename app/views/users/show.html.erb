@@ -1,20 +1,47 @@
-<h1>My profile</h1>
 
-<p>
-  <% if @user.avatar.attached? %>
-    <%= image_tag @user.avatar %>
-  <% end %>
-</p>
-
-<h3>Name</h3>
-<%= @user.name %>
-
-<h3>Age</h3>
-<%= @user.age %>
-
-<h3>Mail address</h3>
-<%= @user.email %>
-
-<div>
-    <%= link_to 'Edit', edit_user_registration_path %>    
+<div class="profile container">
+    <h1 class="profile-title row">My profile</h1>
+    <div class="row">
+        <p class="profile-img col col-sm-5">
+            <% if @user.avatar.attached? %>
+               <%= image_tag @user.avatar %>
+            <% end %>
+        </p>
+        
+        <div class="profile-content col col-sm-7">
+            <table>
+                <tr>
+                    <td>
+                        <h3>
+                            <span class="fa fa-user user"></span>
+                            <span class="name">Name</span>
+                        </h3>
+                    </td>
+                    <td><h3>: <%= @user.name %></h3></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>
+                            <span class="fa fa-user user"></span>
+                            <span class="age">Age</span>
+                        </h3>
+                    </td>
+                    <td><h3>: <%= @user.age %></h3></td>
+                </tr>
+                 <tr>
+                    <td>  
+                        <h3>
+                            <span class="fa fa-paper-plane"></span>
+                            <span class="email">Email</span>
+                        </h3>
+                    </td>
+                    <td><h3>: <%= @user.email %></h3></td>
+                </tr>
+            </table>
+            
+            <div>
+                <button class="btn-edit"><%= link_to 'Edit', edit_user_registration_path %>  </button>
+            </div>
+        </div>
+    </div>
 </div>

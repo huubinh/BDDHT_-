@@ -1,3 +1,23 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.profile-title{
+    font-weight: bold;
+    color: rgb(76, 0, 115);
+}
+
+.name{
+    width: 150px;
+}
+
+.btn-edit{
+    width: 60px;
+    margin-top:16px;
+    background-color: transparent;
+}
+
+.btn-edit:hover{
+    background-color: #428bca;
+    color: black;
+}
